@@ -1,0 +1,11 @@
+type Panel {
+        embed_url: String!
+        size: PanelSize!
+    }
+
+enum PanelSize {
+    SMALL
+    MEDIUM
+    LARGE
+    VERY_LARGE
+}
