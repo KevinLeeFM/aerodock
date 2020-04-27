@@ -3,7 +3,7 @@ from django.urls import path
 from ariadne.contrib.django.views import GraphQLView
 
 from . import views
-from .models.schema import schema
+from .graphql.schema import schema
 
 urlpatterns = [
     path('', views.index, name='index'),

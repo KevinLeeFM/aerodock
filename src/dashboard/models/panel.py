@@ -16,7 +16,7 @@ class Panel(models.Model):
     # file to be embeded
     embed_url = models.URLField()
 
-    # django only allows the first part of the tuple to be strings, so we have to convert these PanelSize enums to their respective string values
+    # django only allows the first part of the tuples to be strings, so we have to convert these PanelSize enums to their respective string values
 
     SIZE_CHOICES = [
         (PanelSize.SMALL.value, 'small'),

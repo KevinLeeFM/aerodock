@@ -1,0 +1,4 @@
+type Query {
+    panel(id: Int!): Panel!
+    allPanels: [Panel!]!
+}
