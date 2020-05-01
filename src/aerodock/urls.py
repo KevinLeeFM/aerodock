@@ -14,9 +14,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import include,path
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('dashboard/', include('dashboard.urls'))
+    path('dashboard/', include('dashboard.urls')),
+
+    # index.html file will be our root template. When a user opens our webste,
+    # this file will be sent by server at first. After then, api requests
+    # will directed above address.
+
+    # webpack production bundle will come here
+    path("", TemplateView.as_view(template_name="index.html")),
 ]
