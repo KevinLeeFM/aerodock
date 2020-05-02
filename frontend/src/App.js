@@ -15,7 +15,7 @@ import "./App.css"
 // import our queries previously defined
 import { PANEL_QUERY } from "./query" //New
 
-const MainPage = (props) => {
+const DebugPage = (props) => {
     const { loading, error, data } = useQuery(PANEL_QUERY);
     
     // when query starts, loading will be true until the response will back.
@@ -27,7 +27,7 @@ const MainPage = (props) => {
 
     //if query succeed, data will be available and render the data
     return(
-        <div className="main-page">
+        <div className="debug-page">
             {data && data.panel &&
                 <div className="panel">
                     <p className="url">{data.panel.embed_url}</p>
@@ -43,7 +43,7 @@ const App = () => {
     return (
         <div className="App">
             <Switch>
-                <Route exact path="/" component={MainPage} />
+                <Route exact path="/" component={DebugPage} />
             </Switch>
         </div>
     )

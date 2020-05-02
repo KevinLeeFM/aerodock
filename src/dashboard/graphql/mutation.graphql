@@ -1,0 +1,5 @@
+type Mutation {
+    # size defaults to medium
+    addPanel(embed_url: String!, size: PanelSize): Boolean!
+    removePanel(id: Int!): Boolean!
+}

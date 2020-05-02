@@ -1,7 +1,7 @@
 type Panel {
-        embed_url: String!
-        size: PanelSize!
-    }
+    embed_url: String!
+    size: PanelSize!
+}
 
 enum PanelSize {
     SMALL
