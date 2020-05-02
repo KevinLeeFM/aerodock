@@ -53,7 +53,17 @@ const productionSettings = {
 				  // in some cases some styles can be missing due to 
 				  // inline styling. 
 				  { loader: 'style-loader', options: { injectType: 'styleTag' } },
-				  "css-loader"
+				  "css-loader",
+				  {
+					loader: 'postcss-loader',
+					options: {
+					  ident: 'postcss',
+					  plugins: [
+						require('tailwindcss'),
+						require('autoprefixer'),
+					  ],
+					},
+				  },
 				],
 			},
 		]
@@ -110,8 +120,18 @@ const devSettings = {
 				  // inline styling. 
 				  { loader: 'style-loader', options: { injectType: 'styleTag' } },
 				  "css-loader",
-				  'postcss-loader'
+				  'postcss-loader',
 				  //{ loader: 'sass-loader' },
+				  {
+					loader: 'postcss-loader',
+					options: {
+					  ident: 'postcss',
+					  plugins: [
+						require('tailwindcss'),
+						require('autoprefixer'),
+					  ],
+					},
+				  },
 				],
 			},
 		]
