@@ -4,7 +4,6 @@
 * @Last Modified by:   Difei Gu
 * @Last Modified time: 2020-04-30 21:42:51
 */
-// djr/FRONTEND/src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
@@ -18,7 +17,6 @@ import { ApolloProvider } from '@apollo/react-hooks';
 
 /*
     our api client will make request to thils adress.
-    at      djr/djr/urls.py
 */
 const apiclient = new ApolloClient({
     uri: 'http://127.0.0.1:8000/dashboard/graphql/',

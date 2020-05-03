@@ -4,16 +4,16 @@
 * @Last Modified by:   Difei Gu
 * @Last Modified time: 2020-04-30 22:22:50
 */
-// djr/FRONTEND/src/App.js
 import React from "react";
+import dashboard from "./components/Dashboard"
 import { Route, Switch, Link } from "react-router-dom"
 
 // import Apollo framework query hook
-import { useQuery } from '@apollo/react-hooks'; // New
+import { useQuery } from '@apollo/react-hooks';
 import "./App.css"
 
 // import our queries previously defined
-import { PANEL_QUERY } from "./query" //New
+import { PANEL_QUERY } from "./query"
 
 const DebugPage = (props) => {
     const { loading, error, data } = useQuery(PANEL_QUERY);
@@ -43,7 +43,7 @@ const App = () => {
     return (
         <div className="App">
             <Switch>
-                <Route exact path="/" component={DebugPage} />
+                <Route exact path="/" component={dashboard} />
             </Switch>
         </div>
     )
