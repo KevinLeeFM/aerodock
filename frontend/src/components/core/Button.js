@@ -25,10 +25,6 @@ export class Button extends React.Component {
         this.state = {}
     }
 
-    handleClick(e) {
-        //TODO
-    }
-
     render() {
         let level = this.props['level'] || 'low'; // defaults to low
         let onClick = this.props['onClick'] || (() => {});
