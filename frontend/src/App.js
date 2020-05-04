@@ -44,6 +44,7 @@ const App = () => {
         <div className="App">
             <Switch>
                 <Route exact path="/" component={dashboard} />
+                <Route exact path="/users/" component={DebugPage} />
             </Switch>
         </div>
     )
