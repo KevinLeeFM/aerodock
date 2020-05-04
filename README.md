@@ -32,4 +32,4 @@ We develop React components with Styleguidist, a development server that allows 
 
 ## Pending unresolvable issues
 - (As of 2020/05/02) Ariadne currently has a bug with interpreting SDL for default enum values in field arguments (e.g. `addPanel(size: PanelSize=MEDIUM)`, where `MEDIUM` is the default enum for `size`), where the default value will always become `null`. This issue is being tracked on Ariadne's repository and is in their milestone: https://github.com/mirumee/ariadne/issues/293
-- (As of 2020/05/02) Styleguidist's hot reload feature does not work with Webpack version ^4.41.6. However, ^4.41.6 does.
+- (As of 2020/05/02) Styleguidist's hot reload feature does not work with Webpack version ^4.43.0 or ^4.41.6.
