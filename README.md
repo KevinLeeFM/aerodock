@@ -30,6 +30,16 @@ We develop React components with Styleguidist, a development server that allows 
 2. In your browser, navigate to http://localhost:6060/
 - NOTE: Due to some bug, hot reloading with Styleguidist doesn't work.
 
+### Road Map
+Phase one:
+1. Panel settings
+2. Wire api to components
+3. User login
+
+Phase two:
+1. Populate app
+2. More customization options?
+
 ## Pending unresolvable issues
 - (As of 2020/05/02) Ariadne currently has a bug with interpreting SDL for default enum values in field arguments (e.g. `addPanel(size: PanelSize=MEDIUM)`, where `MEDIUM` is the default enum for `size`), where the default value will always become `null`. This issue is being tracked on Ariadne's repository and is in their milestone: https://github.com/mirumee/ariadne/issues/293
 - (As of 2020/05/02) Styleguidist's hot reload feature does not work with Webpack version ^4.43.0 or ^4.41.6.

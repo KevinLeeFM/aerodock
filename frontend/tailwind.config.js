@@ -1,10 +1,6 @@
 module.exports = {
   purge: [],
   theme: {
-    boxShadow: {
-      'dock': 'inset 0 0 20px rgba(255, 255, 255, .5)',
-    },
-    extend: {},
     fontFamily: {
       display: ['Inter', 'Helvetica', 'sans-serif'],
       body: ['Inter', 'Helvetica', 'sans-serif'],
@@ -45,6 +41,15 @@ module.exports = {
           800: '#9B2C2C',
           900: '#742A2A',
         },
+      },
+      boxShadow: {
+        dock: 'inset 0 0 20px rgba(255, 255, 255, .5)',
+        panelStatic: '0 2px 5px rgba(0, 0, 0, .5)',
+      },
+      width: {
+        'small': '20em',
+        'medium': '50em',
+        'large': '70em',
       }
     },
   },
@@ -66,7 +71,7 @@ module.exports = {
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],
     borderWidth: ['responsive'],
-    boxShadow: ['responsive', 'hover', 'focus'],
+    boxShadow: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
     boxSizing: ['responsive'],
     clear: ['responsive'],
     cursor: ['responsive'],
