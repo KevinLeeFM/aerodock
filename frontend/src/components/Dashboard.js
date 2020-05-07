@@ -9,7 +9,7 @@ export class dashboard extends Component {
             <div className="App">
                 <Background />
                 <AppDock />
-                <PanelView setOverlay={this.props.setOverlay}/>
+                <PanelView />
             </div>
         )
     }

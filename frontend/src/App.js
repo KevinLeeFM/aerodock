@@ -6,7 +6,6 @@
 */
 import React, { Component } from "react";
 import Dashboard from "./components/Dashboard"
-import Overlay from './components/Overlay'
 import { Route, Switch, Link } from "react-router-dom"
 
 // import Apollo framework query hook
@@ -42,24 +41,15 @@ const DebugPage = (props) => {
 export class App extends Component {
     constructor(){
         super()
-        this.state = {
-            overlaySelection: 0,
-        }
-    }
-
-    setOverlay = (val) => {
-        console.log(val)
-        this.setState({overlaySelection: val});
     }
 
     render() {
         return (
             <div className="App">
                 <Switch>
-                    <Route exact path="/" component={() => <Dashboard setOverlay={this.setOverlay} />} />
+                    <Route exact path="/" component={Dashboard}/>
                     <Route exact path="/users/" component={DebugPage} />
                 </Switch>
-                <Overlay getOverlay={this.state.overlaySelection}/>
             </div>
         )
     }
