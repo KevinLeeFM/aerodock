@@ -28,7 +28,7 @@ We develop React components with Styleguidist, a development server that allows 
 **To run development server for individual React components**
 1. In the `frontend/` folder, run `npm run styleguide`
 2. In your browser, navigate to http://localhost:6060/
-- NOTE: Due to some bug, hot reloading with Styleguidist only work with Webpack version ^4.41.6.
+- NOTE: Due to some bug, hot reloading with Styleguidist doesn't work.
 
 ### Road Map
 Phase one:

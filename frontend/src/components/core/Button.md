@@ -5,11 +5,12 @@ A component that calls the `onClick` prop when clicked.
 This component have 4 different levels of severity: `min`, `low`, `primary`, and `critical`. This property is purely visual.
 
 ```js
-<Button name='More Options' level='min'></Button>
-<Button name='Revise'></Button>
-<Button name='Cancel' level='low'></Button>
-<Button name='OK' level='primary'></Button>
-<Button name='Delete' level='critical'></Button>
+<Button level='min'>More Options</Button>
+<Button>Revise</Button>
+<Button level='low'>Cancel</Button>
+<Button level='primary'>OK</Button>
+<Button level='critical'>Delete</Button>
+<Button disabled={true}>Disabled</Button>
 ```
 
 Example of utilizing `onClick`
@@ -18,5 +19,5 @@ function hello() {
     alert('Hello world!')
 }
 
-<Button name='Say Hello' onClick={hello}></Button>
+<Button onClick={hello}>Say Hello!</Button>
 ```
