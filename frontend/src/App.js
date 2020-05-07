@@ -4,8 +4,9 @@
 * @Last Modified by:   Difei Gu
 * @Last Modified time: 2020-04-30 22:22:50
 */
-import React from "react";
-import dashboard from "./components/Dashboard"
+import React, { Component } from "react";
+import Dashboard from "./components/Dashboard"
+import Overlay from './components/Overlay'
 import { Route, Switch, Link } from "react-router-dom"
 
 // import Apollo framework query hook
@@ -38,15 +39,30 @@ const DebugPage = (props) => {
     )
 }
 
+export class App extends Component {
+    constructor(){
+        super()
+        this.state = {
+            overlaySelection: 0,
+        }
+    }
 
-const App = () => {
-    return (
-        <div className="App">
-            <Switch>
-                <Route exact path="/" component={dashboard} />
-                <Route exact path="/users/" component={DebugPage} />
-            </Switch>
-        </div>
-    )
+    setOverlay = (val) => {
+        console.log(val)
+        this.setState({overlaySelection: val});
+    }
+
+    render() {
+        return (
+            <div className="App">
+                <Switch>
+                    <Route exact path="/" component={() => <Dashboard setOverlay={this.setOverlay} />} />
+                    <Route exact path="/users/" component={DebugPage} />
+                </Switch>
+                <Overlay getOverlay={this.state.overlaySelection}/>
+            </div>
+        )
+    }
 }
+
 export default App

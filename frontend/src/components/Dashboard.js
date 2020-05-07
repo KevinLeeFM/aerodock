@@ -8,8 +8,8 @@ export class dashboard extends Component {
         return (
             <div className="App">
                 <Background />
-                <PanelView />
-                <AppDock className='fixed'/>
+                <AppDock />
+                <PanelView setOverlay={this.props.setOverlay}/>
             </div>
         )
     }

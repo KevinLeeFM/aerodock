@@ -48,7 +48,7 @@ module.exports = {
       },
       width: {
         'small': '20em',
-        'medium': '50em',
+        'medium': '45em',
         'large': '70em',
       }
     },
