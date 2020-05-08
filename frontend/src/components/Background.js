@@ -32,7 +32,7 @@ export class Background extends Component {
 
     render() {
         return (
-            <div className='bg-opacity-50 h-screen w-screen fixed' style={{background: SkyGradient.getCSS(this.state.date)}}></div>
+            <div className='h-screen w-screen fixed' style={{background: SkyGradient.getCSS(this.state.date)}}></div>
         )
     }
 }

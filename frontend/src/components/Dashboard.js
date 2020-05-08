@@ -8,8 +8,8 @@ export class dashboard extends Component {
         return (
             <div className="App">
                 <Background />
+                <AppDock />
                 <PanelView />
-                <AppDock className='fixed'/>
             </div>
         )
     }

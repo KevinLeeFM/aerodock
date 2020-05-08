@@ -4,8 +4,8 @@
 * @Last Modified by:   Difei Gu
 * @Last Modified time: 2020-04-30 22:22:50
 */
-import React from "react";
-import dashboard from "./components/Dashboard"
+import React, { Component } from "react";
+import Dashboard from "./components/Dashboard"
 import { Route, Switch, Link } from "react-router-dom"
 
 // import Apollo framework query hook
@@ -38,15 +38,20 @@ const DebugPage = (props) => {
     )
 }
 
-
-const App = () => {
-    return (
-        <div className="App">
-            <Switch>
-                <Route exact path="/" component={dashboard} />
-                <Route exact path="/users/" component={DebugPage} />
-            </Switch>
-        </div>
-    )
+export class App extends Component {
+    constructor(){
+        super()
+    }
+    render() {
+        return (
+            <div className="App">
+                <Switch>
+                    <Route exact path="/" component={Dashboard}/>
+                    <Route exact path="/users/" component={DebugPage} />
+                </Switch>
+            </div>
+        )
+    }
 }
+
 export default App
