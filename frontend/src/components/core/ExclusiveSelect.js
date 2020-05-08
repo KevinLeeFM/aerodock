@@ -32,7 +32,7 @@ export default class ExclusiveSelect extends React.Component {
         try {
             this.props.onValueChange(selected);
         } catch(e) {
-            throw 'TypeError: ExclusiveSelect doesn\'t have a choiceHandler or it isn\'t a function!';
+            throw `TypeError: ExclusiveSelect doesn't exist or it isn't a function. It is of type: ${typeof(this.props.onValueChange)}.`;
         }
 
         let choiceLevel = {};

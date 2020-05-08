@@ -28,8 +28,6 @@ export default class Button extends React.Component {
 
     render() {
 
-        console.log('this.props.level')
-
         let level = this.props.disabled ? 'disabled' : (this.props['level'] || 'low'); // defaults to low
 
         let onClick = this.props['onClick'] || (() => {});
