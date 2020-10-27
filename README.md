@@ -8,7 +8,7 @@
 3. Install the following by running this command:
 
 ```
-pip3 install ariadne; pip3 install django;
+pip3 install ariadne; pip3 install django; pip3 install django-cors-headers;
 ```
 
 **Note for VS Code users**
