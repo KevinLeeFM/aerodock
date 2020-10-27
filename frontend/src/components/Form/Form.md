@@ -1,8 +1,8 @@
 Example with ExclusiveSelect
 
 ```js
-import ExclusiveSelect from './ExclusiveSelect';
-import Choice from './Choice';
+import ExclusiveSelect from '../ExclusiveSelect/ExclusiveSelect';
+import Choice from '../ExclusiveSelect/Choice';
 
 <Form onValueChange={(k, v) => {
     // console.log(`Lunch Choice: ${v.lunchChoice} \n Hair Style: ${v.hairStyle}`);

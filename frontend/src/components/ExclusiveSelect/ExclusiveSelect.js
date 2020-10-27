@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import Button from '../Button/Button';
 
 export default class ExclusiveSelect extends React.Component {
     constructor(props) {

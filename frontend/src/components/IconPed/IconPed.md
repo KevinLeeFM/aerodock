@@ -12,8 +12,8 @@ import iconPuzzle from '../../assets/svg/icon-puzzle.svg';
 ```
 
 ```js
-import ExclusiveSelect from './ExclusiveSelect';
-import Button from './Button';
+import ExclusiveSelect from '../ExclusiveSelect/ExclusiveSelect';
+import Button from '../Button/Button';
 
 import cardSmall from '../../assets/svg/card_small.svg';
 import cardMedium from '../../assets/svg/card_medium.svg';
